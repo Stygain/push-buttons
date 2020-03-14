@@ -9,7 +9,8 @@ function HamburgerX(props) {
   const dispatch = useDispatch();
 
   const styling = css`
-    position: relative;
+    position: absolute;
+
     top: 20px;
     left: 20px;
     width: 35px;

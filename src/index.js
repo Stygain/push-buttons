@@ -13,8 +13,6 @@ import App from './App';
 const globalStyles = css`
   body {
     margin: 0;
-    height: 100%;
-    overflow: hidden;
   }
 
   html {

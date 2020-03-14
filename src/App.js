@@ -15,6 +15,7 @@ function App() {
 
     .master-container {
       border: 3px solid black;
+
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -27,18 +28,10 @@ function App() {
       <HamburgerX click={clicked} clickhandler={setClicked} />
       <Menu click={clicked} />
       <div className="master-container">
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
-        <ButtonContainer />
+        <ButtonContainer color="rgb(133, 109, 252)" />
+        <ButtonContainer color="rgb(144, 218, 211)" />
+        <ButtonContainer color="rgb(252, 237, 157)" />
+        <ButtonContainer color="rgb(252, 174, 110)" />
       </div>
     </div>
   );
