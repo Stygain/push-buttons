@@ -42,6 +42,12 @@ function ButtonContainer(props) {
       align-items: center;
       flex-wrap: wrap;
     }
+
+    @media (max-height: 800px) {
+      .smaller-container {
+        height: 75%;
+      }
+    }
   `;
 
   return (
