@@ -16,6 +16,9 @@ import Tactile from './Buttons/Tactile/Tactile.js';
 import TactileToggle from './Buttons/Tactile/TactileToggle.js';
 import TactileCircle from './Buttons/Tactile/TactileCircle.js';
 
+import SliderRound from './Buttons/Sliders/SliderRound.js';
+import SliderRoundOnOff from './Buttons/Sliders/SliderRoundOnOff.js';
+
 
 const PageStructure = [
   {
@@ -39,21 +42,11 @@ const PageStructure = [
     ]
   },
   {
-    title: "Fill-on-Hover Buttons",
+    title: "Sliders/Switches",
     backgroundColor: "rgb(144, 191, 218)",
     buttons: [
-      <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
-    ]
-  },
-  {
-    backgroundColor: "rgb(221, 190, 245)",
-    buttons: [
-      <HoverFill />,
-      <HoverFill />,
+      <SliderRound />,
+      <SliderRoundOnOff />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,
