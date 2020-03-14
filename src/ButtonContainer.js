@@ -14,7 +14,7 @@ function ButtonContainer(props) {
     flex-basis: 49%;
     flex-grow: 2;
 
-    background-color: ${props.color};
+    background-color: ${props.content.backgroundColor};
 
     display: flex;
     flex-direction: row;
@@ -37,11 +37,11 @@ function ButtonContainer(props) {
   return (
     <div css={styling}>
       <div className="smaller-container">
-        <HoverFill />
-        <HoverFill />
-        <HoverFill />
-        <HoverFill />
-        <HoverFill />
+        {
+          props.content.buttons.map((button) => {
+            return (button);
+          })
+        }
       </div>
   	</div>
   );

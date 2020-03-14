@@ -6,6 +6,51 @@ import HamburgerX from './HamburgerX.js';
 import Menu from './Menu.js';
 import ButtonContainer from './ButtonContainer.js';
 
+import HoverFill from './Buttons/HoverFill.js';
+
+
+const PageStructure = [
+  {
+    backgroundColor: "rgb(133, 109, 252)",
+    buttons: [
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+    ]
+  },
+  {
+    backgroundColor: "rgb(144, 218, 211)",
+    buttons: [
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+    ]
+  },
+  {
+    backgroundColor: "rgb(144, 191, 218)",
+    buttons: [
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+    ]
+  },
+  {
+    backgroundColor: "rgb(221, 190, 245)",
+    buttons: [
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+      <HoverFill />,
+    ]
+  }
+]
 
 function App() {
   const [clicked, setClicked] = useState(false);
@@ -28,10 +73,11 @@ function App() {
       <HamburgerX click={clicked} clickhandler={setClicked} />
       <Menu click={clicked} />
       <div className="master-container">
-        <ButtonContainer color="rgb(133, 109, 252)" />
-        <ButtonContainer color="rgb(144, 218, 211)" />
-        <ButtonContainer color="rgb(252, 237, 157)" />
-        <ButtonContainer color="rgb(252, 174, 110)" />
+        {
+          PageStructure.map((item) => {
+            return (<ButtonContainer content={item} />);
+          })
+        }
       </div>
     </div>
   );
