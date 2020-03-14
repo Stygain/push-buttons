@@ -1,8 +1,6 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
-import HoverFill from './Buttons/HoverFill.js';
-
 
 function ButtonContainer(props) {
   const styling = css`
@@ -24,7 +22,7 @@ function ButtonContainer(props) {
     .smaller-container {
       ${'' /* border: 1px solid blue; */}
 
-      height: 30%;
+      height: 55%;
 
       display: flex;
       flex-direction: row;

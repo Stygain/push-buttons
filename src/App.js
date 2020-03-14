@@ -7,6 +7,8 @@ import Menu from './Menu.js';
 import ButtonContainer from './ButtonContainer.js';
 
 import HoverFill from './Buttons/HoverFill.js';
+import HoverFillVert from './Buttons/HoverFillVert.js';
+import HoverFillDiag from './Buttons/HoverFillDiag.js';
 
 
 const PageStructure = [
@@ -14,8 +16,8 @@ const PageStructure = [
     backgroundColor: "rgb(133, 109, 252)",
     buttons: [
       <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
+      <HoverFillVert />,
+      <HoverFillDiag />,
       <HoverFill />,
       <HoverFill />,
     ]
@@ -24,7 +26,7 @@ const PageStructure = [
     backgroundColor: "rgb(144, 218, 211)",
     buttons: [
       <HoverFill />,
-      <HoverFill />,
+      <HoverFillVert />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,
@@ -34,7 +36,7 @@ const PageStructure = [
     backgroundColor: "rgb(144, 191, 218)",
     buttons: [
       <HoverFill />,
-      <HoverFill />,
+      <HoverFillVert />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,
@@ -44,7 +46,7 @@ const PageStructure = [
     backgroundColor: "rgb(221, 190, 245)",
     buttons: [
       <HoverFill />,
-      <HoverFill />,
+      <HoverFillVert />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,
@@ -56,10 +58,10 @@ function App() {
   const [clicked, setClicked] = useState(false);
 
   const styling = css`
-    border: 1px solid red;
+    ${'' /* border: 1px solid red; */}
 
     .master-container {
-      border: 3px solid black;
+      ${'' /* border: 3px solid black; */}
 
       display: flex;
       flex-direction: row;
