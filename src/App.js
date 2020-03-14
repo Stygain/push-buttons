@@ -9,6 +9,8 @@ import ButtonContainer from './ButtonContainer.js';
 import HoverFill from './Buttons/HoverFill.js';
 import HoverFillVert from './Buttons/HoverFillVert.js';
 import HoverFillDiag from './Buttons/HoverFillDiag.js';
+import HoverFillPartialHoriz from './Buttons/HoverFillPartialHoriz.js';
+import HoverFillRotateIn from './Buttons/HoverFillRotateIn.js';
 
 
 const PageStructure = [
@@ -18,8 +20,8 @@ const PageStructure = [
       <HoverFill />,
       <HoverFillVert />,
       <HoverFillDiag />,
-      <HoverFill />,
-      <HoverFill />,
+      <HoverFillPartialHoriz />,
+      <HoverFillRotateIn />,
     ]
   },
   {

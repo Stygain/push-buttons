@@ -2,7 +2,7 @@
 import { jsx, css } from '@emotion/core';
 
 
-function HoverFillDiag(props) {
+function HoverFillRotateIn(props) {
   const styling = css`
     ${'' /* border: 1px solid red; */}
 
@@ -44,14 +44,14 @@ function HoverFillDiag(props) {
       position: absolute;
       left: 0;
       top: 0;
-      height: 260%;
-      width: 140%;
+      height: 110%;
+      width: 110%;
 
       background: rgb(255, 255, 255);
 
       transition: all .3s ease-in-out;
 
-      transform: translateX(-98%) translateY(-25%) rotate(45deg);
+      transform: translateX(-70%) translateY(-70%) rotate(-45deg);
     }
 
     button:hover {
@@ -59,8 +59,9 @@ function HoverFillDiag(props) {
     }
 
     button:hover:after {
-      height: 300%;
-      transform: translateX(-9%) translateY(-25%) rotate(45deg);
+      ${'' /* height: 300%; */}
+      height: 150%;
+      transform: translateX(0%) translateY(0%) rotate(0deg);
     }
   `;
 
@@ -75,4 +76,4 @@ function HoverFillDiag(props) {
   );
 }
 
-export default HoverFillDiag;
+export default HoverFillRotateIn;
