@@ -6,6 +6,13 @@ function HoverFillVert(props) {
   const styling = css`
     ${'' /* border: 1px solid red; */}
 
+    flex-basis: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     button {
       outline: none;
 
@@ -21,7 +28,6 @@ function HoverFillVert(props) {
       font-weight: 700;
       font-size: 22px;
       color: rgb(255, 255, 255);
-
 
       border: 3px solid rgb(255, 255, 255);
       background-color: rgba(6, 66, 111, 0);
@@ -54,7 +60,7 @@ function HoverFillVert(props) {
     }
 
     button:hover {
-      color: rgb(0, 0, 0);
+      color: rgb(143, 130, 205);
     }
 
     button:hover:after {

@@ -6,15 +6,20 @@ import HamburgerX from './HamburgerX.js';
 import Menu from './Menu.js';
 import ButtonContainer from './ButtonContainer.js';
 
-import HoverFill from './Buttons/HoverFill.js';
-import HoverFillVert from './Buttons/HoverFillVert.js';
-import HoverFillDiag from './Buttons/HoverFillDiag.js';
-import HoverFillPartialHoriz from './Buttons/HoverFillPartialHoriz.js';
-import HoverFillRotateIn from './Buttons/HoverFillRotateIn.js';
+import HoverFill from './Buttons/HoverFill/HoverFill.js';
+import HoverFillVert from './Buttons/HoverFill/HoverFillVert.js';
+import HoverFillDiag from './Buttons/HoverFill/HoverFillDiag.js';
+import HoverFillPartialHoriz from './Buttons/HoverFill/HoverFillPartialHoriz.js';
+import HoverFillRotateIn from './Buttons/HoverFill/HoverFillRotateIn.js';
+
+import Tactile from './Buttons/Tactile/Tactile.js';
+import TactileToggle from './Buttons/Tactile/TactileToggle.js';
+import TactileCircle from './Buttons/Tactile/TactileCircle.js';
 
 
 const PageStructure = [
   {
+    title: "Fill-on-Hover Buttons",
     backgroundColor: "rgb(133, 109, 252)",
     buttons: [
       <HoverFill />,
@@ -25,20 +30,20 @@ const PageStructure = [
     ]
   },
   {
+    title: "Tactile Buttons",
     backgroundColor: "rgb(144, 218, 211)",
     buttons: [
-      <HoverFill />,
-      <HoverFillVert />,
-      <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
+      <Tactile />,
+      <TactileToggle />,
+      <TactileCircle />,
     ]
   },
   {
+    title: "Fill-on-Hover Buttons",
     backgroundColor: "rgb(144, 191, 218)",
     buttons: [
       <HoverFill />,
-      <HoverFillVert />,
+      <HoverFill />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,
@@ -48,7 +53,7 @@ const PageStructure = [
     backgroundColor: "rgb(221, 190, 245)",
     buttons: [
       <HoverFill />,
-      <HoverFillVert />,
+      <HoverFill />,
       <HoverFill />,
       <HoverFill />,
       <HoverFill />,

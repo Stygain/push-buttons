@@ -15,9 +15,21 @@ function ButtonContainer(props) {
     background-color: ${props.content.backgroundColor};
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+
+    h2 {
+      ${'' /* border: 1px solid red; */}
+
+      @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+      font-family: 'Lato', sans-serif;
+
+      font-size: 28px;
+      font-weight: 600;
+
+      margin: 0;
+    }
 
     .smaller-container {
       ${'' /* border: 1px solid blue; */}
@@ -34,6 +46,7 @@ function ButtonContainer(props) {
 
   return (
     <div css={styling}>
+      <h2>{props.content.title}</h2>
       <div className="smaller-container">
         {
           props.content.buttons.map((button) => {

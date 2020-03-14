@@ -6,6 +6,13 @@ function HoverFill(props) {
   const styling = css`
     ${'' /* border: 1px solid red; */}
 
+    flex-basis: 33%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     button {
       padding: 8px 15px;
       margin: 25px 50px;
@@ -20,7 +27,6 @@ function HoverFill(props) {
 
       border: 3px solid rgb(255, 255, 255);
       background: rgba(255, 255, 255, 0);
-      background: ${props.bgColor};
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
       transition: background 0.3s ease,
@@ -29,7 +35,7 @@ function HoverFill(props) {
 
     button:hover {
       background: rgba(255, 255, 255, 1);
-      color: rgb(0, 0, 0);
+      color: rgb(143, 130, 205);
     }
   `;
 
