@@ -18,6 +18,7 @@ import TactileCircle from './Buttons/Tactile/TactileCircle.js';
 
 import SliderRound from './Buttons/Sliders/SliderRound.js';
 import SliderRoundOnOff from './Buttons/Sliders/SliderRoundOnOff.js';
+import SliderWiden from './Buttons/Sliders/SliderWiden.js';
 
 
 const PageStructure = [
@@ -47,9 +48,7 @@ const PageStructure = [
     buttons: [
       <SliderRound />,
       <SliderRoundOnOff />,
-      <HoverFill />,
-      <HoverFill />,
-      <HoverFill />,
+      <SliderWiden />,
     ]
   }
 ]

@@ -35,6 +35,7 @@ function ButtonContainer(props) {
       ${'' /* border: 1px solid blue; */}
 
       height: 55%;
+      width: 100%;
 
       display: flex;
       flex-direction: row;
