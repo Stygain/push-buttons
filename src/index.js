@@ -12,6 +12,8 @@ import App from './App';
 
 const globalStyles = css`
   body {
+    @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    font-family: 'Lato', sans-serif;
     margin: 0;
   }
 

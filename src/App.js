@@ -20,6 +20,8 @@ import SliderRound from './Buttons/Sliders/SliderRound.js';
 import SliderRoundOnOff from './Buttons/Sliders/SliderRoundOnOff.js';
 import SliderWiden from './Buttons/Sliders/SliderWiden.js';
 
+import RotateHoriz from './Buttons/Progress/RotateHoriz.js';
+
 
 const PageStructure = [
   {
@@ -47,6 +49,15 @@ const PageStructure = [
     backgroundColor: "rgb(144, 191, 218)",
     buttons: [
       <SliderRound />,
+      <SliderRoundOnOff />,
+      <SliderWiden />,
+    ]
+  },
+  {
+    title: "Loading Buttons",
+    backgroundColor: "rgb(139, 236, 198)",
+    buttons: [
+      <RotateHoriz />,
       <SliderRoundOnOff />,
       <SliderWiden />,
     ]
