@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import { useState, useEffect } from 'react';
 
 
-function RotateHoriz(props) {
+function SlideHoriz(props) {
   const [ clicked, setClicked ] = useState(false);
   const [ loaderWidth, setLoaderWidth ] = useState("0px");
 
@@ -22,8 +22,6 @@ function RotateHoriz(props) {
     .content-wrapper {
       ${'' /* border: 1px solid blue; */}
 
-      position: relative;
-
       width: 130px;
       height: 50px;
 
@@ -37,8 +35,6 @@ function RotateHoriz(props) {
 
     .content {
       ${'' /* border: 1px solid blue; */}
-
-      position: absolute;
 
       width: 100%;
       height: 100%;
@@ -56,8 +52,12 @@ function RotateHoriz(props) {
       background: rgb(14, 196, 125);
 
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+    }
 
-      ${'' /* transform: rotateX(0deg) translate3d(0px, 0px, 20px); */}
+    .loader-container {
+      ${'' /* border: 1px solid red; */}
+
+      position: relative;
     }
 
     .loader-bg {
@@ -68,10 +68,9 @@ function RotateHoriz(props) {
       width: 100%;
       top: 0;
       left: 0;
-      height: 15px;
+      height: 0;
 
       background: rgb(14, 168, 109);
-      transform: rotateX(-90deg) translate3d(0px, 7.5px, 42.5px);
 
       transition: 0.3s ease;
     }
@@ -84,17 +83,18 @@ function RotateHoriz(props) {
       width: ${loaderWidth};
       top: 0;
       left: 0;
-      height: 15px;
+      height: 0;
 
       background: rgb(10, 139, 89);
-      transform: rotateX(-90deg) translate3d(0px, 7.5px, 42.5px);
 
       transition: 0.3s ease;
     }
 
+    .loader-bg.loading, .loader.loading {
+      height: 10px;
+    }
+
     .content-wrapper.loading {
-      ${'' /* transform: rotateX(40deg); */}
-      transform: rotate3d(1, 0, 0, 40deg);
       cursor: default;
     }
   `;
@@ -134,11 +134,13 @@ function RotateHoriz(props) {
         <div className="content">
           Button
         </div>
-        <div className="loader-bg"></div>
-        <div className="loader"></div>
+        <div className="loader-container">
+          <div className={clicked ? "loader-bg loading" : "loader-bg"}></div>
+          <div className={clicked ? "loader loading" : "loader"}></div>
+        </div>
       </div>
   	</div>
   );
 }
 
-export default RotateHoriz;
+export default SlideHoriz;

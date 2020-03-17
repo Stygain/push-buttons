@@ -21,6 +21,7 @@ import SliderRoundOnOff from './Buttons/Sliders/SliderRoundOnOff.js';
 import SliderWiden from './Buttons/Sliders/SliderWiden.js';
 
 import RotateHoriz from './Buttons/Progress/RotateHoriz.js';
+import SlideHoriz from './Buttons/Progress/SlideHoriz.js';
 
 
 const PageStructure = [
@@ -58,7 +59,7 @@ const PageStructure = [
     backgroundColor: "rgb(139, 236, 198)",
     buttons: [
       <RotateHoriz />,
-      <SliderRoundOnOff />,
+      <SlideHoriz />,
       <SliderWiden />,
     ]
   }
