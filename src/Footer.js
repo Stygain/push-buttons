@@ -11,14 +11,14 @@ function Footer(props) {
     /* border: 1px solid red; */
 
     width: 100%;
-    height: 140px;
+    height: 130px;
 
     background-color: rgb(85, 85, 85);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     box-shadow: inset 1px 4px 9px -6px;
 
@@ -67,6 +67,10 @@ function Footer(props) {
       margin: 5px 0px;
     }
 
+    h2.title {
+      margin-top: 10px;
+    }
+
     h3 {
       font-size: 16px;
 
@@ -92,7 +96,7 @@ function Footer(props) {
 
   return (
     <div css={styling}>
-      <h2>Site created by Adam Barton</h2>
+      <h2 className="title">Site created by Adam Barton</h2>
       <div className='links'>
         {
           FooterData.websites.map((item) => {
@@ -102,7 +106,7 @@ function Footer(props) {
       </div>
       <div className='socials'>
         <a className="github" href="https://github.com/Stygain"><img src={GithubLogo} alt="Github logo" /></a>
-        <h3 className="title linkedin"><a href="https://www.linkedin.com/in/adam-barton-a43151133">in</a></h3>
+        <h3 className="linkedin"><a href="https://www.linkedin.com/in/adam-barton-a43151133">in</a></h3>
       </div>
     </div>
   );
