@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import { useState, useEffect } from 'react';
 
 
-function SlideHoriz(props) {
+function SlideHorizDown(props) {
   const [ clicked, setClicked ] = useState(false);
   const [ loaderWidth, setLoaderWidth ] = useState("0px");
 
@@ -103,15 +103,15 @@ function SlideHoriz(props) {
     if (clicked) {
       async function updateLoaderWidth() {
         await new Promise(r => setTimeout(r, 750));
-        setLoaderWidth("10%");
+        setLoaderWidth("5%");
         await new Promise(r => setTimeout(r, 850));
         setLoaderWidth("20%");
         await new Promise(r => setTimeout(r, 750));
-        setLoaderWidth("50%");
+        setLoaderWidth("30%");
         await new Promise(r => setTimeout(r, 750));
-        setLoaderWidth("60%");
+        setLoaderWidth("40%");
         await new Promise(r => setTimeout(r, 650));
-        setLoaderWidth("75%");
+        setLoaderWidth("65%");
         await new Promise(r => setTimeout(r, 750));
         setLoaderWidth("100%");
         await new Promise(r => setTimeout(r, 500));
@@ -143,4 +143,4 @@ function SlideHoriz(props) {
   );
 }
 
-export default SlideHoriz;
+export default SlideHorizDown;
