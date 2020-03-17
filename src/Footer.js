@@ -11,7 +11,7 @@ function Footer(props) {
     /* border: 1px solid red; */
 
     width: 100%;
-    height: 120px;
+    height: 140px;
 
     background-color: rgb(85, 85, 85);
 

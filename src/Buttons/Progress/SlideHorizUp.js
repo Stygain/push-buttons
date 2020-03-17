@@ -22,6 +22,8 @@ function SlideHorizUp(props) {
     .content-wrapper {
       ${'' /* border: 1px solid blue; */}
 
+      margin: 25px 50px;
+
       width: 130px;
       height: 50px;
 

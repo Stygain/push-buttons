@@ -22,6 +22,8 @@ function RotateHorizFull(props) {
     .content-wrapper {
       ${'' /* border: 1px solid blue; */}
 
+      margin: 25px 50px;
+
       position: relative;
 
       width: 130px;

@@ -31,6 +31,7 @@ import RotateHorizFull from './Buttons/Progress/RotateHorizFull.js';
 const PageStructure = [
   {
     title: "Fill-on-Hover Buttons",
+    subtitle: "Hover over each button to see an action",
     backgroundColor: "rgb(199, 188, 254)",
     buttons: [
       <HoverFill />,
@@ -42,6 +43,7 @@ const PageStructure = [
   },
   {
     title: "Tactile Buttons",
+    subtitle: "Click each button to see an action",
     backgroundColor: "rgb(144, 218, 211)",
     buttons: [
       <Tactile />,
@@ -51,6 +53,7 @@ const PageStructure = [
   },
   {
     title: "Sliders/Switches",
+    subtitle: "Click on each slider to see an action",
     backgroundColor: "rgb(144, 191, 218)",
     buttons: [
       <SliderRound />,
@@ -60,6 +63,7 @@ const PageStructure = [
   },
   {
     title: "Loading Buttons",
+    subtitle: "Click on each loading button to see an action",
     backgroundColor: "rgb(249, 178, 174)",
     buttons: [
       <SlideHorizDown />,
@@ -78,7 +82,7 @@ function App() {
     ${'' /* border: 1px solid red; */}
 
     .master-container {
-      padding-top: 55px;
+      padding-top: 50px;
       background-color: rgb(199, 188, 254);
       ${'' /* border: 3px solid black; */}
 

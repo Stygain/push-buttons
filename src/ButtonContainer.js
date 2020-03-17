@@ -7,7 +7,7 @@ function ButtonContainer(props) {
     ${'' /* border: 1px solid green; */}
 
     min-width: 500px;
-    height: 400px;
+    min-height: 400px;
 
     flex-basis: 49%;
     flex-grow: 2;
@@ -19,7 +19,18 @@ function ButtonContainer(props) {
     justify-content: space-evenly;
     align-items: center;
 
-    h2 {
+    .title-container {
+      ${'' /* border: 1px solid green; */}
+
+      height: 24%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    h2, h3 {
       ${'' /* border: 1px solid red; */}
 
       @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
@@ -29,12 +40,18 @@ function ButtonContainer(props) {
       font-weight: 600;
 
       margin: 0;
+      padding: 0;
+    }
+
+    h3 {
+      font-size: 18px;
     }
 
     .smaller-container {
       ${'' /* border: 1px solid blue; */}
 
-      height: 55%;
+      ${'' /* height: 55%; */}
+      min-height: 55%;
       width: 100%;
 
       display: flex;
@@ -43,17 +60,14 @@ function ButtonContainer(props) {
       align-items: center;
       flex-wrap: wrap;
     }
-
-    @media (max-height: 800px) {
-      .smaller-container {
-        height: 75%;
-      }
-    }
   `;
 
   return (
     <div css={styling}>
-      <h2>{props.content.title}</h2>
+      <div className="title-container">
+        <h2>{props.content.title}</h2>
+        <h3>{props.content.subtitle}</h3>
+      </div>
       <div className="smaller-container">
         {
           props.content.buttons.map((button) => {
