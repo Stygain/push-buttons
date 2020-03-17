@@ -11,11 +11,13 @@ function HamburgerX(props) {
   const styling = css`
     position: ${props.click ? "fixed" : "absolute"};
 
-    top: 12px;
-    left: 15px;
+    top: 0px;
+    left: 0px;
+    margin-top: 10px;
+    margin-left: 9px;
     width: 35px;
-    height: 30px;
-    padding: 8px;
+    height: 24px;
+    padding: 2px;
     z-index: 3;
 
     display: flex;
@@ -29,14 +31,14 @@ function HamburgerX(props) {
 
     div {
       width: 35px;
-      height: 6px;
+      height: 4px;
       background-color: rgba(179, 203, 197, 1);
       transition: 0.3s cubic-bezier(.69,-0.36,.32,1.35);
     }
 
     div:nth-child(1).change {
-      transform: translateY(12px) scale(1.2) rotate(-135deg);
-      background-color: rgb(117, 117, 117);
+      transform: translateY(10px) scale(1) rotate(-135deg);
+      background-color: rgb(57, 57, 57);
     }
 
     div:nth-child(2).change {
@@ -44,8 +46,8 @@ function HamburgerX(props) {
     }
 
     div:nth-child(3).change {
-      transform: translateY(-12px) scale(1.2) rotate(135deg);
-      background-color: rgb(117, 117, 117);
+      transform: translateY(-10px) scale(1) rotate(135deg);
+      background-color: rgb(57, 57, 57);
     }
   `;
 

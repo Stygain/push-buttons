@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import NavBar from './NavBar.js';
 import Menu from './Menu.js';
+import Footer from './Footer.js';
 import ButtonContainer from './ButtonContainer.js';
 
 import HoverFill from './Buttons/HoverFill/HoverFill.js';
@@ -99,6 +100,7 @@ function App() {
           })
         }
       </div>
+      <Footer />
     </div>
   );
 }

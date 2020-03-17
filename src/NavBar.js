@@ -14,9 +14,9 @@ function NavBar(props) {
 
     position: relative;
 
-    padding: 15px 5px;
+    padding: 5px 0px;
     background-color: rgb(52, 52, 52);
-    box-shadow: 0px 3px 5px 0px rgba(52, 52, 52, 0.52);
+    box-shadow: 0px 3px 5px 0px rgba(52, 52, 52, 0.81);
     z-index: 20;
 
     display: flex;
@@ -31,15 +31,7 @@ function NavBar(props) {
     transition: top 0.3s;
 
     &.hide {
-      top: -77px;
-    }
-
-    .arrow-container {
-      position: absolute;
-      top: 13px;
-      right: 25px;
-
-      z-index: 5;
+      top: -55px;
     }
 
     .title {
