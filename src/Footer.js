@@ -1,6 +1,8 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
+import HoverFillFooterButton from './HoverFillFooterButton.js';
+
 import GithubLogo from './Images/GitHub-Mark-Light-32px.png';
 
 import FooterData from './Data/Footer.json';
@@ -100,7 +102,7 @@ function Footer(props) {
       <div className='links'>
         {
           FooterData.websites.map((item) => {
-            return (<h3><a href={item.link}>{item.text}</a></h3>);
+            return (<HoverFillFooterButton content={item.text} link={item.link} />);
           })
         }
       </div>
