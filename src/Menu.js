@@ -12,8 +12,8 @@ function Menu(props) {
     @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
     font-family: 'Spartan', sans-serif;
 
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 15;
     opacity: 0%;
     background-color: ${currMenuColor};
     text-align: center;

@@ -6,8 +6,6 @@ import HamburgerX from './HamburgerX.js';
 
 
 function NavBar(props) {
-  const [clicked, setClicked] = useState(false);
-
   const [ prevScrollPos, setPrevScrollPos ] = useState(null);
   const [ showNavBar, setShowNavBar ] = useState(true);
 
@@ -53,6 +51,10 @@ function NavBar(props) {
 
   useEffect(() => {
     const handleScroll = () => {
+      if (props.click) {
+        setShowNavBar(false);
+        return;
+      }
       var currentScrollPos = window.pageYOffset;
       // console.log(currentScrollPos);
       if (prevScrollPos === null) {
@@ -70,11 +72,11 @@ function NavBar(props) {
     window.addEventListener("scroll", handleScroll);
 
     return(() => window.removeEventListener("scroll", handleScroll));
-  })
+  }, [props.click, prevScrollPos])
 
   return (
-    <div css={styling} className={showNavBar ? "navbar" : "navbar hide"}>
-      <HamburgerX click={clicked} clickhandler={setClicked} />
+    <div css={styling} className={showNavBar && props.click === false ? "navbar" : "navbar hide"}>
+      <HamburgerX click={props.click} clickhandler={props.clickhandler} />
       <h1 className="title">Adam Barton</h1>
     </div>
   );

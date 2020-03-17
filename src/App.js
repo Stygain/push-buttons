@@ -3,7 +3,6 @@ import { jsx, css } from '@emotion/core';
 import { useState } from 'react';
 
 import NavBar from './NavBar.js';
-import HamburgerX from './HamburgerX.js';
 import Menu from './Menu.js';
 import ButtonContainer from './ButtonContainer.js';
 
@@ -78,7 +77,8 @@ function App() {
     ${'' /* border: 1px solid red; */}
 
     .master-container {
-      margin-top: 40px;
+      padding-top: 55px;
+      background-color: rgb(199, 188, 254);
       ${'' /* border: 3px solid black; */}
 
       display: flex;
@@ -90,8 +90,7 @@ function App() {
 
   return (
     <div className="App" css={styling}>
-      <NavBar />
-      {/* <HamburgerX click={clicked} clickhandler={setClicked} /> */}
+      <NavBar click={clicked} clickhandler={setClicked} />
       <Menu click={clicked} />
       <div className="master-container">
         {

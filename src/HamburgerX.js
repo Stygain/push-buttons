@@ -9,7 +9,7 @@ function HamburgerX(props) {
   const dispatch = useDispatch();
 
   const styling = css`
-    position: absolute;
+    position: ${props.click ? "fixed" : "absolute"};
 
     top: 12px;
     left: 15px;
