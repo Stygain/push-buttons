@@ -11,8 +11,8 @@ function HamburgerX(props) {
   const styling = css`
     position: absolute;
 
-    top: 20px;
-    left: 20px;
+    top: 12px;
+    left: 15px;
     width: 35px;
     height: 30px;
     padding: 8px;
@@ -30,7 +30,7 @@ function HamburgerX(props) {
     div {
       width: 35px;
       height: 6px;
-      background-color: #000;
+      background-color: rgba(179, 203, 197, 1);
       transition: 0.3s cubic-bezier(.69,-0.36,.32,1.35);
     }
 

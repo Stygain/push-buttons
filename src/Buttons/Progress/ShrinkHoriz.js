@@ -50,7 +50,9 @@ function ShrinkHoriz(props) {
       justify-content: center;
       align-items: center;
 
-      background: rgb(14, 196, 125);
+      color: rgb(255, 255, 255);
+
+      background: rgb(250, 96, 91);
 
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
@@ -58,7 +60,6 @@ function ShrinkHoriz(props) {
     }
 
     .content p {
-      color: rgb(0, 0, 0);
       text-transform: uppercase;
       font-size: 22px;
       font-weight: 700;
@@ -76,7 +77,7 @@ function ShrinkHoriz(props) {
 
       opacity: 0%;
 
-      background: rgb(14, 168, 109);
+      background: rgb(227, 56, 50);
 
       transition: 0.3s ease,
                   opacity 0.15s ease;
@@ -91,7 +92,7 @@ function ShrinkHoriz(props) {
 
       opacity: 0%;
 
-      background: rgb(10, 139, 89);
+      background: rgb(164, 44, 39);
 
       transition: 0.3s ease,
                   opacity 0.15s ease;

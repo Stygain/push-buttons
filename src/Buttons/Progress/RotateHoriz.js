@@ -53,7 +53,9 @@ function RotateHoriz(props) {
       justify-content: center;
       align-items: center;
 
-      background: rgb(14, 196, 125);
+      color: rgb(255, 255, 255);
+
+      background: rgb(250, 96, 91);
 
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
@@ -70,7 +72,7 @@ function RotateHoriz(props) {
       left: 0;
       height: 15px;
 
-      background: rgb(14, 168, 109);
+      background: rgb(227, 56, 50);
       transform: rotateX(-90deg) translate3d(0px, 7.5px, 42.5px);
 
       transition: 0.3s ease;
@@ -86,7 +88,7 @@ function RotateHoriz(props) {
       left: 0;
       height: 15px;
 
-      background: rgb(10, 139, 89);
+      background: rgb(164, 44, 39);
       transform: rotateX(-90deg) translate3d(0px, 7.5px, 42.5px);
 
       transition: 0.3s ease;

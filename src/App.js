@@ -2,6 +2,7 @@
 import { jsx, css } from '@emotion/core';
 import { useState } from 'react';
 
+import NavBar from './NavBar.js';
 import HamburgerX from './HamburgerX.js';
 import Menu from './Menu.js';
 import ButtonContainer from './ButtonContainer.js';
@@ -30,7 +31,7 @@ import RotateHorizFull from './Buttons/Progress/RotateHorizFull.js';
 const PageStructure = [
   {
     title: "Fill-on-Hover Buttons",
-    backgroundColor: "rgb(133, 109, 252)",
+    backgroundColor: "rgb(199, 188, 254)",
     buttons: [
       <HoverFill />,
       <HoverFillVert />,
@@ -59,7 +60,7 @@ const PageStructure = [
   },
   {
     title: "Loading Buttons",
-    backgroundColor: "rgb(139, 236, 198)",
+    backgroundColor: "rgb(249, 178, 174)",
     buttons: [
       <SlideHorizDown />,
       <SlideHorizUp />,
@@ -77,6 +78,7 @@ function App() {
     ${'' /* border: 1px solid red; */}
 
     .master-container {
+      margin-top: 40px;
       ${'' /* border: 3px solid black; */}
 
       display: flex;
@@ -88,7 +90,8 @@ function App() {
 
   return (
     <div className="App" css={styling}>
-      <HamburgerX click={clicked} clickhandler={setClicked} />
+      <NavBar />
+      {/* <HamburgerX click={clicked} clickhandler={setClicked} /> */}
       <Menu click={clicked} />
       <div className="master-container">
         {
