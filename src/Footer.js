@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
+import FooterData from './Data/Footer.json';
+
 
 function Footer(props) {
   const styling = css`
-
     /* border: 1px solid red; */
 
     width: 100%;
@@ -75,8 +76,11 @@ function Footer(props) {
     <div css={styling}>
       <h2>Site created by Adam Barton</h2>
       <div className='links'>
-        <h3><a href='https://github.com/Stygain'>Github</a></h3>
-        <h3><a href='https://stygain.github.io/css-loaders/'>Loaders</a></h3>
+        {
+          FooterData.map((item) => {
+            return (<h3><a href={item.link}>{item.text}</a></h3>);
+          })
+        }
       </div>
     </div>
   );
