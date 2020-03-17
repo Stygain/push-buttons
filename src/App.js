@@ -24,6 +24,7 @@ import RotateHoriz from './Buttons/Progress/RotateHoriz.js';
 import SlideHorizUp from './Buttons/Progress/SlideHorizUp.js';
 import SlideHorizDown from './Buttons/Progress/SlideHorizDown.js';
 import ShrinkHoriz from './Buttons/Progress/ShrinkHoriz.js';
+import RotateHorizFull from './Buttons/Progress/RotateHorizFull.js';
 
 
 const PageStructure = [
@@ -60,10 +61,11 @@ const PageStructure = [
     title: "Loading Buttons",
     backgroundColor: "rgb(139, 236, 198)",
     buttons: [
-      <RotateHoriz />,
       <SlideHorizDown />,
       <SlideHorizUp />,
       <ShrinkHoriz />,
+      <RotateHoriz />,
+      <RotateHorizFull />,
     ]
   }
 ]
