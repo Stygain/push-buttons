@@ -23,6 +23,7 @@ import SliderWiden from './Buttons/Sliders/SliderWiden.js';
 import RotateHoriz from './Buttons/Progress/RotateHoriz.js';
 import SlideHorizUp from './Buttons/Progress/SlideHorizUp.js';
 import SlideHorizDown from './Buttons/Progress/SlideHorizDown.js';
+import ShrinkHoriz from './Buttons/Progress/ShrinkHoriz.js';
 
 
 const PageStructure = [
@@ -62,6 +63,7 @@ const PageStructure = [
       <RotateHoriz />,
       <SlideHorizDown />,
       <SlideHorizUp />,
+      <ShrinkHoriz />,
     ]
   }
 ]

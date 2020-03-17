@@ -3,7 +3,7 @@ import { jsx, css } from '@emotion/core';
 import { useState, useEffect } from 'react';
 
 
-function SlideHorizUp(props) {
+function ShrinkHoriz(props) {
   const [ clicked, setClicked ] = useState(false);
   const [ loaderWidth, setLoaderWidth ] = useState("0px");
 
@@ -22,6 +22,8 @@ function SlideHorizUp(props) {
     .content-wrapper {
       ${'' /* border: 1px solid blue; */}
 
+      position: relative;
+
       width: 130px;
       height: 50px;
 
@@ -36,13 +38,12 @@ function SlideHorizUp(props) {
     .content {
       ${'' /* border: 1px solid blue; */}
 
+      position: absolute;
+      top: 0;
+      left: 0;
+
       width: 100%;
       height: 100%;
-
-      text-transform: uppercase;
-      font-size: 22px;
-      font-weight: 700;
-      user-select: none;
 
       display: flex;
       flex-direction: column;
@@ -56,77 +57,89 @@ function SlideHorizUp(props) {
       transition: 0.3s ease;
     }
 
-    .loader-container {
-      ${'' /* border: 1px solid red; */}
+    .content p {
+      color: rgb(0, 0, 0);
+      text-transform: uppercase;
+      font-size: 22px;
+      font-weight: 700;
+      user-select: none;
 
-      position: relative;
-
-      transition: 0.3s ease;
+      transition: 0.1s ease;
     }
 
     .loader-bg {
-      ${'' /* border: 1px solid red; */}
-
       position: absolute;
-
-      width: 100%;
-      top: 0;
+      top: calc(50% - 7.5px);
       left: 0;
-      height: 0;
+      width: 100%;
+      height: 15px;
+
+      opacity: 0%;
 
       background: rgb(14, 168, 109);
 
-      transition: 0.3s ease;
+      transition: 0.3s ease,
+                  opacity 0.15s ease;
     }
 
     .loader {
-      ${'' /* border: 1px solid red; */}
-
       position: absolute;
-
-      width: ${loaderWidth};
-      top: 0;
+      top: calc(50% - 7.5px);
       left: 0;
-      height: 0;
+      width: ${loaderWidth};
+      height: 15px;
+
+      opacity: 0%;
 
       background: rgb(10, 139, 89);
 
-      transition: 0.3s ease;
-    }
-
-    .loader-bg.loading, .loader.loading {
-      height: 10px;
-    }
-
-    .content-wrapper.loading {
-      cursor: default;
+      transition: 0.3s ease,
+                  opacity 0.15s ease;
     }
 
     .content-wrapper.loading .content {
-      transform: translateY(-10px);
+      top: calc(50% - 7.5px);
+
+      height: 15px;
+
+      overflow: hidden;
     }
 
-    .content-wrapper.loading .loader-container {
-      transform: translateY(-10px);
+    .content-wrapper.loading .content p {
+      opacity: 0%;
+    }
+
+    .loader-bg.loading {
+      opacity: 100%;
+
+      transition: 0.3s ease,
+                  opacity 0.2s ease 0.1s;
+    }
+
+    .loader.loading {
+      opacity: 100%;
+
+      transition: 0.3s ease,
+                  opacity 0.2s ease 0.1s;
     }
   `;
 
   useEffect(() => {
     if (clicked) {
       async function updateLoaderWidth() {
-        await new Promise(r => setTimeout(r, 500));
-        setLoaderWidth("5%");
-        await new Promise(r => setTimeout(r, 850));
+        await new Promise(r => setTimeout(r, 600));
+        setLoaderWidth("15%");
+        await new Promise(r => setTimeout(r, 700));
         setLoaderWidth("20%");
         await new Promise(r => setTimeout(r, 750));
-        setLoaderWidth("40%");
-        await new Promise(r => setTimeout(r, 850));
-        setLoaderWidth("52%");
-        await new Promise(r => setTimeout(r, 650));
-        setLoaderWidth("69%");
-        await new Promise(r => setTimeout(r, 550));
+        setLoaderWidth("35%");
+        await new Promise(r => setTimeout(r, 400));
+        setLoaderWidth("45%");
+        await new Promise(r => setTimeout(r, 750));
+        setLoaderWidth("80%");
+        await new Promise(r => setTimeout(r, 600));
         setLoaderWidth("100%");
-        await new Promise(r => setTimeout(r, 500));
+        await new Promise(r => setTimeout(r, 550));
         setClicked(false);
         await new Promise(r => setTimeout(r, 100));
         setLoaderWidth("0%");
@@ -144,15 +157,13 @@ function SlideHorizUp(props) {
           }
         }>
         <div className="content">
-          Button
+          <p>Button</p>
         </div>
-        <div className="loader-container">
-          <div className={clicked ? "loader-bg loading" : "loader-bg"}></div>
-          <div className={clicked ? "loader loading" : "loader"}></div>
-        </div>
+        <div className={clicked ? "loader-bg loading" : "loader-bg"}></div>
+        <div className={clicked ? "loader loading" : "loader"}></div>
       </div>
   	</div>
   );
 }
 
-export default SlideHorizUp;
+export default ShrinkHoriz;
