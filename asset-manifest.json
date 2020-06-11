@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/push-buttons/static/js/main.3036decc.chunk.js",
-    "main.js.map": "/push-buttons/static/js/main.3036decc.chunk.js.map",
+    "main.js": "/push-buttons/static/js/main.92c9938a.chunk.js",
+    "main.js.map": "/push-buttons/static/js/main.92c9938a.chunk.js.map",
     "runtime-main.js": "/push-buttons/static/js/runtime-main.259ee5bd.js",
     "runtime-main.js.map": "/push-buttons/static/js/runtime-main.259ee5bd.js.map",
     "static/js/2.b6bbfea0.chunk.js": "/push-buttons/static/js/2.b6bbfea0.chunk.js",
     "static/js/2.b6bbfea0.chunk.js.map": "/push-buttons/static/js/2.b6bbfea0.chunk.js.map",
     "index.html": "/push-buttons/index.html",
-    "precache-manifest.58fec4d253eaffe6eb25c4b1dc4a16c4.js": "/push-buttons/precache-manifest.58fec4d253eaffe6eb25c4b1dc4a16c4.js",
+    "precache-manifest.2e4c9c63589570b1d4a362c970f2abe0.js": "/push-buttons/precache-manifest.2e4c9c63589570b1d4a362c970f2abe0.js",
     "service-worker.js": "/push-buttons/service-worker.js",
     "static/js/2.b6bbfea0.chunk.js.LICENSE.txt": "/push-buttons/static/js/2.b6bbfea0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.259ee5bd.js",
     "static/js/2.b6bbfea0.chunk.js",
-    "static/js/main.3036decc.chunk.js"
+    "static/js/main.92c9938a.chunk.js"
   ]
 }

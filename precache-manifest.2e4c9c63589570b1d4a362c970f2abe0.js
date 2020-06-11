@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "83c0d8e7291690ef7baa69caa6c8e98d",
+    "revision": "3069a0df4aa4943f555369cd517e72cb",
     "url": "/push-buttons/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/push-buttons/static/js/2.b6bbfea0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a138eee35af4943880e",
-    "url": "/push-buttons/static/js/main.3036decc.chunk.js"
+    "revision": "1a3c044a852d8bb41c95",
+    "url": "/push-buttons/static/js/main.92c9938a.chunk.js"
   },
   {
     "revision": "59f8fbd93e119e902de5",
