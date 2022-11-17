@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.js": "/push-buttons/static/js/main.32166f19.chunk.js",
-    "main.js.map": "/push-buttons/static/js/main.32166f19.chunk.js.map",
-    "runtime-main.js": "/push-buttons/static/js/runtime-main.45589d57.js",
-    "runtime-main.js.map": "/push-buttons/static/js/runtime-main.45589d57.js.map",
-    "static/js/2.dec8252f.chunk.js": "/push-buttons/static/js/2.dec8252f.chunk.js",
-    "static/js/2.dec8252f.chunk.js.map": "/push-buttons/static/js/2.dec8252f.chunk.js.map",
+    "main.js": "/push-buttons/static/js/main.b9b1ea49.chunk.js",
+    "main.js.map": "/push-buttons/static/js/main.b9b1ea49.chunk.js.map",
+    "runtime-main.js": "/push-buttons/static/js/runtime-main.6b28a6c1.js",
+    "runtime-main.js.map": "/push-buttons/static/js/runtime-main.6b28a6c1.js.map",
+    "static/js/2.e7d4da6b.chunk.js": "/push-buttons/static/js/2.e7d4da6b.chunk.js",
+    "static/js/2.e7d4da6b.chunk.js.map": "/push-buttons/static/js/2.e7d4da6b.chunk.js.map",
     "index.html": "/push-buttons/index.html",
-    "precache-manifest.001542553853db2d622f4061f292064c.js": "/push-buttons/precache-manifest.001542553853db2d622f4061f292064c.js",
+    "precache-manifest.d5b482aa23e49bb95d1829eed34cd29b.js": "/push-buttons/precache-manifest.d5b482aa23e49bb95d1829eed34cd29b.js",
     "service-worker.js": "/push-buttons/service-worker.js",
-    "static/js/2.dec8252f.chunk.js.LICENSE.txt": "/push-buttons/static/js/2.dec8252f.chunk.js.LICENSE.txt"
+    "static/js/2.e7d4da6b.chunk.js.LICENSE.txt": "/push-buttons/static/js/2.e7d4da6b.chunk.js.LICENSE.txt",
+    "static/js/main.b9b1ea49.chunk.js.LICENSE.txt": "/push-buttons/static/js/main.b9b1ea49.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.45589d57.js",
-    "static/js/2.dec8252f.chunk.js",
-    "static/js/main.32166f19.chunk.js"
+    "static/js/runtime-main.6b28a6c1.js",
+    "static/js/2.e7d4da6b.chunk.js",
+    "static/js/main.b9b1ea49.chunk.js"
   ]
 }
